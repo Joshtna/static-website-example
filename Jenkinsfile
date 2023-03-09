@@ -15,6 +15,6 @@ pipeline {
       } 
         stage('enable static website')
         steps{
-            sh aws s3 website s3://demo2399 --index-document index.html
+            sh 'aws s3 website s3://demo2399 --index-document index.html'
     }
 }
