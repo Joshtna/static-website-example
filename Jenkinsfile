@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout') {
+        stage('cloning') {
             steps {
                   git branch: 'master', url: 'https://github.com/Joshtna/static-website-example.git'
             }
